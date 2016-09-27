@@ -1,0 +1,40 @@
+
+
+$black: #111;
+$white: #fff;
+
+html {
+  background: $black;
+  border: 20px solid $white;
+  color: $white;
+  font-family: sans-serif;
+  height: 100%;
+  padding: 1em;
+}
+
+body {
+  padding: 0;
+}
+
+h1 {
+  color: $white;
+  display: block;
+  line-height: 2em;
+  margin: 0 0 15px;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid;
+  color: $white;
+  display: inline-block;
+  font-size: 1.2em;
+  line-height: 2em;
+  padding: 5px 8px;
+}

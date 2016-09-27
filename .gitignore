@@ -1,0 +1,4 @@
+.DS_*
+npm*
+node_modules
+
