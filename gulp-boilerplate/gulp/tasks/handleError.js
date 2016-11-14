@@ -5,9 +5,10 @@ var gutil = require('gulp-util');
 var notify = require('gulp-notify');
 
 
-module.exports = function(task, err) {
-  return function(err) {
-    gutil.log(gutil.colors.red(err));
-    notify.onError(task + ' failed, check the logs..')(err);
-	};
+module.exports = function (task, err) {
+    return function (err) {
+        gutil.log(gutil.colors.red(err));
+        notify.onError(task + ' failed, check the logs..')(err);
+        this.emit('end');
+    };
 };

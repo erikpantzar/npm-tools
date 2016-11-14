@@ -7,8 +7,9 @@ var gulp = require('./gulp')([
     'sass',
     'server',
     'htmlmin',
+    'copy',
     'watch'
 ]);
 
-gulp.task('default', ['sasslint', 'sass', 'browserify', 'htmlmin', 'watch', 'server']);
+gulp.task('default', ['sasslint', 'sass', 'browserify', 'htmlmin','copy', 'watch', 'server']);
 gulp.task('scripts', ['browserify']);

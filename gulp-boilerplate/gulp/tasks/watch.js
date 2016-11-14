@@ -6,7 +6,7 @@ var config = require('../config');
 var watchTask = function() {
 	gulp.watch(config.app.src + '/**/**.html', ['htmlmin']);
 	gulp.watch(config.script.src + '/**/**.js', ['browserify']);
-	gulp.watch(config.style.src + '/**/**.scss', ['sass']);
+	gulp.watch(config.style.src + '/**/**.scss', ['sass-lint', 'sass']);
 };
 
 gulp.task('watch', watchTask);
